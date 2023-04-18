@@ -23,6 +23,7 @@ export class AppComponent {
       priceArticle: 100,
       textAltImg: "Une voiture qui va vite",
       urlImg: "",
+      totalNbLike: 0,
       comment: "Waouh",
       dispo: false
     },
@@ -31,6 +32,7 @@ export class AppComponent {
       priceArticle: 80,
       textAltImg: "Une moto qui va vite",
       urlImg: "",
+      totalNbLike: 0,
       comment: "Trop bien",
       dispo: true
     },
@@ -39,6 +41,7 @@ export class AppComponent {
       priceArticle: 20,
       textAltImg: "Un vélo qui va vite",
       urlImg: "",
+      totalNbLike: 0,
       comment: "J'adore",
       dispo: true
     },

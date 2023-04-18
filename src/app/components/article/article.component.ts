@@ -15,14 +15,29 @@ export class ArticleComponent {
   @Input() comment: string;
   @Input() dispo: boolean;
   @Output() info = new EventEmitter<string>();
+  jaime: boolean = true;
 
 
-  constructor(){}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
-  onLike(){
-    this.totalNbLike++;
+  onLike() {
+    if (this.jaime === true) {
+      this.totalNbLike++;
+      this.jaime = false;
+    } else {
+      this.totalNbLike--;
+      this.jaime = true
+    }
     this.info.emit(this.titleArticle);
+  }
+
+  getColor() {
+    if (this.dispo === true) {
+      return "green";
+    } else {
+      return "red";
+    }
   }
 }
