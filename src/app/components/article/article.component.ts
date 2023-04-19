@@ -14,6 +14,7 @@ export class ArticleComponent {
   @Input() totalNbLike: number;
   @Input() comment: string;
   @Input() dispo: boolean;
+  @Input() idArticle: number;
   @Output() info = new EventEmitter<string>();
   jaime: boolean = true;
 

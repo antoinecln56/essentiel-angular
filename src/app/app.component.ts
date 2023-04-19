@@ -1,49 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'labonneaffaire';
-  message: string = "";
+
 
   constructor(){}
 
-  ngOnInit(){}
+  ngOnInit(){
 
-  onAffiche(arg: string) {
-    return this.message = "Merci d'avoir voté pour l'article : " + arg;
   }
 
-  liste = [
-    {
-      titleArticle: "Voiture",
-      priceArticle: 100,
-      textAltImg: "Une voiture qui va vite",
-      urlImg: "",
-      totalNbLike: 0,
-      comment: "Waouh",
-      dispo: false
-    },
-    {
-      titleArticle: "Moto",
-      priceArticle: 80,
-      textAltImg: "Une moto qui va vite",
-      urlImg: "",
-      totalNbLike: 0,
-      comment: "Trop bien",
-      dispo: true
-    },
-    {
-      titleArticle: "Vélo",
-      priceArticle: 20,
-      textAltImg: "Un vélo qui va vite",
-      urlImg: "",
-      totalNbLike: 0,
-      comment: "J'adore",
-      dispo: true
-    },
-  ]
+
 }
