@@ -6,7 +6,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './ajouter.component.html',
   styleUrls: ['./ajouter.component.scss']
 })
-export class AjouterComponent {
+export class AjouterComponent implements OnInit {
   titleToAdd = '';
   priceToAdd = '';
 

@@ -4,12 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './components/article/article.component';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataService } from './services/data.service';
 import { ListeComponent } from './components/liste/liste.component';
 import { DetailsComponent } from './components/details/details.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AjouterComponent } from './components/ajouter/ajouter.component';
+import { AjouterReactiveFormComponent } from './components/ajouter-reactive-form/ajouter-reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,14 @@ import { AjouterComponent } from './components/ajouter/ajouter.component';
     ListeComponent,
     DetailsComponent,
     PageNotFoundComponent,
-    AjouterComponent
+    AjouterComponent,
+    AjouterReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [DataService],
