@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './components/article/article.component';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataService } from './services/data.service';
 import { ListeComponent } from './components/liste/liste.component';
 import { DetailsComponent } from './components/details/details.component';
@@ -27,7 +27,9 @@ import { AjouterReactiveFormComponent } from './components/ajouter-reactive-form
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+
+
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
